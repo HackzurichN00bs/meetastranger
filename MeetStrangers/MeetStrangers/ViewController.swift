@@ -57,16 +57,22 @@ class ViewController: UIViewController {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
-        
         // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 47.389916, longitude: 8.515865)
-        //        marker.position = (self.selectedPlace?.coordinate)!
-        marker.map = mapView
+        let marker1 = GMSMarker()
+        marker1.position = CLLocationCoordinate2D(latitude: 47.389916, longitude: 8.515865)
+        marker1.title = "Me@Technopark"
+        marker1.snippet = "M@T"
+//        marker1.icon = UIImage(named: "iconv1")
+        marker1.icon = GMSMarker.markerImage(with: .green)
+        marker1.map = mapView
         
-        //        let marker = GMSMarker(position: (self.selectedPlace?.coordinate)!)
-        //        print(lastLocation)
+        let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
+        let marker2 = GMSMarker(position: position)
+        marker2.title = "Hello World"
+        marker2.map = mapView
+        
     }
+    
     
 }
 
