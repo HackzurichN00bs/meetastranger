@@ -1,6 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-target 'MeetStranger' do
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
-end
-
