@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MeetStranger
+//  MeetStrangers
 //
 //  Created by Dehua Zhu on 15.09.18.
 //  Copyright © 2018 HackZurichN00bs. All rights reserved.
@@ -10,13 +10,15 @@ import UIKit
 import CoreData
 import GoogleMaps
 import GooglePlaces
+import MapKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyCjOveLB8d9QIvDpbXhAdg1KRqZYwLeQdU")
@@ -57,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "MeetStranger")
+        let container = NSPersistentContainer(name: "MeetStrangers")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
