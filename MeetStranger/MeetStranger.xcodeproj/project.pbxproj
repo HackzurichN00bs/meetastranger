@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11E66CC47922D3D817C7E4C /* libPods-MeetStranger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9B659F6045EE6199246335 /* libPods-MeetStranger.a */; };
 		C6CAA366214D116E00B032F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAA365214D116E00B032F3 /* AppDelegate.swift */; };
 		C6CAA368214D116E00B032F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAA367214D116E00B032F3 /* ViewController.swift */; };
 		C6CAA36B214D116E00B032F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CAA369214D116E00B032F3 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C9B659F6045EE6199246335 /* libPods-MeetStranger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeetStranger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26FB5724C1C071ED4A2AB93 /* Pods-MeetStranger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetStranger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeetStranger/Pods-MeetStranger.debug.xcconfig"; sourceTree = "<group>"; };
 		C6CAA362214D116E00B032F3 /* MeetStranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetStranger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CAA365214D116E00B032F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CAA367214D116E00B032F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		C6CAA388214D116F00B032F3 /* MeetStrangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetStrangerUITests.swift; sourceTree = "<group>"; };
 		C6CAA38A214D116F00B032F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6CAA397214D2A7700B032F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB912340F2601D12C3595CA3 /* Pods-MeetStranger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetStranger.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeetStranger/Pods-MeetStranger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6CAA398214D2A7700B032F3 /* MapKit.framework in Frameworks */,
+				C11E66CC47922D3D817C7E4C /* libPods-MeetStranger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1488DD3C3DC26947BFE2B35E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A26FB5724C1C071ED4A2AB93 /* Pods-MeetStranger.debug.xcconfig */,
+				EB912340F2601D12C3595CA3 /* Pods-MeetStranger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C6CAA359214D116E00B032F3 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 				C6CAA387214D116F00B032F3 /* MeetStrangerUITests */,
 				C6CAA363214D116E00B032F3 /* Products */,
 				C6CAA396214D2A7700B032F3 /* Frameworks */,
+				1488DD3C3DC26947BFE2B35E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C6CAA397214D2A7700B032F3 /* MapKit.framework */,
+				4C9B659F6045EE6199246335 /* libPods-MeetStranger.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6CAA38D214D116F00B032F3 /* Build configuration list for PBXNativeTarget "MeetStranger" */;
 			buildPhases = (
+				8998AB6FC26FEF3696DA4FFB /* [CP] Check Pods Manifest.lock */,
 				C6CAA35E214D116E00B032F3 /* Sources */,
 				C6CAA35F214D116E00B032F3 /* Frameworks */,
 				C6CAA360214D116E00B032F3 /* Resources */,
+				2687175B1CBD4B24B5FE9187 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +288,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2687175B1CBD4B24B5FE9187 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MeetStranger/Pods-MeetStranger-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeetStranger/Pods-MeetStranger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8998AB6FC26FEF3696DA4FFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeetStranger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6CAA35E214D116E00B032F3 /* Sources */ = {
@@ -449,6 +516,7 @@
 		};
 		C6CAA38E214D116F00B032F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26FB5724C1C071ED4A2AB93 /* Pods-MeetStranger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +535,7 @@
 		};
 		C6CAA38F214D116F00B032F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB912340F2601D12C3595CA3 /* Pods-MeetStranger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
