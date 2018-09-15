@@ -15,6 +15,7 @@
 		C6CAA373214D116F00B032F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CAA371214D116F00B032F3 /* LaunchScreen.storyboard */; };
 		C6CAA37E214D116F00B032F3 /* MeetStrangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAA37D214D116F00B032F3 /* MeetStrangerTests.swift */; };
 		C6CAA389214D116F00B032F3 /* MeetStrangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CAA388214D116F00B032F3 /* MeetStrangerUITests.swift */; };
+		C6CAA398214D2A7700B032F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CAA397214D2A7700B032F3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C6CAA384214D116F00B032F3 /* MeetStrangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetStrangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CAA388214D116F00B032F3 /* MeetStrangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetStrangerUITests.swift; sourceTree = "<group>"; };
 		C6CAA38A214D116F00B032F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CAA397214D2A7700B032F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CAA398214D2A7700B032F3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				C6CAA37C214D116F00B032F3 /* MeetStrangerTests */,
 				C6CAA387214D116F00B032F3 /* MeetStrangerUITests */,
 				C6CAA363214D116E00B032F3 /* Products */,
+				C6CAA396214D2A7700B032F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				C6CAA38A214D116F00B032F3 /* Info.plist */,
 			);
 			path = MeetStrangerUITests;
+			sourceTree = "<group>";
+		};
+		C6CAA396214D2A7700B032F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6CAA397214D2A7700B032F3 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +208,11 @@
 				TargetAttributes = {
 					C6CAA361214D116E00B032F3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C6CAA378214D116F00B032F3 = {
 						CreatedOnToolsVersion = 9.4.1;
