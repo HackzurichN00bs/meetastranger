@@ -23,11 +23,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqR-mq-Itg">
-                                <rect key="frame" x="139" y="285" width="96" height="96"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="powerButton"/>
+                                <state key="normal" image="screen_start"/>
                                 <connections>
                                     <action selector="Btn2_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRx-82-dQo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSf-WY-9K7">
+                                <rect key="frame" x="130" y="574" width="114" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <action selector="Btn1_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOz-ns-gzz"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhB-Hc-aoI">
@@ -51,14 +59,6 @@ Hannah Niese Josefine Quack Dehua Zhu</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSf-WY-9K7">
-                                        <rect key="frame" x="130" y="572" width="114" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Credits"/>
-                                        <connections>
-                                            <action selector="Btn1_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOz-ns-gzz"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -81,6 +81,6 @@ Hannah Niese Josefine Quack Dehua Zhu</string>
     <resources>
         <image name="Photo 15.09.18, 14 19 51" width="3024" height="4032"/>
         <image name="darkBlueBG" width="414" height="736"/>
-        <image name="powerButton" width="96" height="96"/>
+        <image name="screen_start" width="750" height="1334"/>
     </resources>
 </document>
