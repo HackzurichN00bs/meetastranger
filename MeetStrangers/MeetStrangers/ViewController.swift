@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var StartBtn: UIButton!
     @IBOutlet weak var CreditScreen: UIButton!
     @IBOutlet weak var CreditButton: UIButton!
-    
+    @IBOutlet weak var startmeet: UIButton!
+    @IBOutlet weak var stopmeet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,8 @@ class ViewController: UIViewController {
         StartBtn.isHidden = true
         CreditButton.isHidden = true
         GMS()
+        startmeet.isHidden = false
+        stopmeet.isHidden = true
     }
     
     

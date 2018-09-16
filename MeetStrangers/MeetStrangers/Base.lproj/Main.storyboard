@@ -27,9 +27,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-U1-UiC">
-                                <rect key="frame" x="148" y="548" width="78" height="45"/>
+                                <rect key="frame" x="155" y="552" width="67" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Credit">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -45,6 +45,16 @@
                                     <action selector="CreditScreen_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecQ-Xp-HIj"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-ar-fgT">
+                                <rect key="frame" x="125" y="539" width="124" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_start_cut"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-UN-KsH">
+                                <rect key="frame" x="125" y="539" width="126" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_stop_cut"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,6 +63,8 @@
                         <outlet property="CreditButton" destination="VbS-U1-UiC" id="iBf-ld-NJw"/>
                         <outlet property="CreditScreen" destination="Kes-XE-ucu" id="ZgJ-Dc-uqZ"/>
                         <outlet property="StartBtn" destination="izr-MT-3Z0" id="DLz-TR-HI0"/>
+                        <outlet property="startmeet" destination="TPh-ar-fgT" id="qTO-9I-IMX"/>
+                        <outlet property="stopmeet" destination="e6p-UN-KsH" id="uW0-am-dqP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,6 +73,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_start_cut" width="243" height="125"/>
+        <image name="button_stop_cut" width="248" height="125"/>
         <image name="screen_credits" width="750" height="1334"/>
         <image name="screen_start" width="750" height="1334"/>
     </resources>
