@@ -101,13 +101,38 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="zoJ-E8-fdX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1D-MH-SZa">
+                                <rect key="frame" x="16" y="50" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="zoomIn">
+                                    <color key="titleColor" red="0.22352941176470589" green="0.30196078431372547" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="zoomIn:" destination="XA5-Vn-q8z" eventType="touchUpInside" id="B9h-oZ-74N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnS-Ar-keS">
+                                <rect key="frame" x="270" y="50" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="changeView">
+                                    <color key="titleColor" red="0.22352941176470589" green="0.30196078431372547" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeView:" destination="XA5-Vn-q8z" eventType="touchUpInside" id="Xc8-Ih-QZL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="InH-f4-k2X"/>
                     </view>
                     <connections>
+                        <outlet property="changeView" destination="XnS-Ar-keS" id="oTq-FR-t7F"/>
+                        <outlet property="mapView" destination="ydg-5x-itI" id="zAa-r5-2LE"/>
                         <outlet property="startmeet" destination="TPh-ar-fgT" id="aJ3-fi-ctV"/>
                         <outlet property="stopmeet" destination="e6p-UN-KsH" id="Cmi-qN-wQz"/>
+                        <outlet property="zoomIn" destination="d1D-MH-SZa" id="js5-Ot-NTg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4S-Nj-Lia" userLabel="First Responder" sceneMemberID="firstResponder"/>
