@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izr-MT-3Z0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="screen_start"/>
+                                <state key="normal" image="screen_start_v2"/>
                                 <connections>
                                     <action selector="StartBtn_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLr-qm-XGn"/>
                                     <segue destination="XA5-Vn-q8z" kind="presentation" modalTransitionStyle="crossDissolve" id="ekx-kp-bS9"/>
@@ -41,7 +41,7 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kes-XE-ucu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="screen_credits"/>
+                                <state key="normal" image="screen_credits_v2"/>
                                 <connections>
                                     <action selector="CreditScreen_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecQ-Xp-HIj"/>
                                 </connections>
@@ -85,7 +85,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-ar-fgT">
                                 <rect key="frame" x="121" y="533" width="124" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_start_cut"/>
+                                <state key="normal" image="button_start_cut_v2"/>
                                 <connections>
                                     <action selector="startmeet_pressed:" destination="XA5-Vn-q8z" eventType="touchUpInside" id="BWH-24-12f"/>
                                 </connections>
@@ -141,9 +141,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button_start_cut" width="243" height="125"/>
+        <image name="button_start_cut_v2" width="243" height="125"/>
         <image name="button_stop_cut" width="248" height="125"/>
-        <image name="screen_credits" width="750" height="1334"/>
-        <image name="screen_start" width="750" height="1334"/>
+        <image name="screen_credits_v2" width="750" height="1334"/>
+        <image name="screen_start_v2" width="750" height="1334"/>
     </resources>
 </document>
